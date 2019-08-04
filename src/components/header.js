@@ -3,9 +3,9 @@ import PropTypes from 'prop-types'
 import styled, { keyframes } from 'styled-components'
 import { graphql, useStaticQuery } from 'gatsby'
 import BackgroundImage from 'gatsby-background-image'
-import { fadeInLeft } from 'react-animations';
+import { fadeIn } from 'react-animations';
 
-const fadeInAnimation = keyframes`${fadeInLeft}`;
+const fadeInAnimation = keyframes`${fadeIn}`;
 
 const ImageBackground = styled(BackgroundImage)`
   background-position: top 40% center;
@@ -32,7 +32,7 @@ const TextBox = styled('div')`
   h1 {
     text-shadow: 1px 1px 3px #eeddff66;
     font-size: 4rem;
-    animation: 1s ${fadeInAnimation};
+    animation: 1.5s ${fadeInAnimation};
   }
 
   p,
