@@ -42,13 +42,11 @@ const Layout = ({ children }) => {
         </main>
         <footer
           style={{
-            padding: '1rem',
+            margin: '2rem',
             fontWeight: '600',
-            position: 'absolute',
-            bottom: 0,
           }}
         >
-          © {new Date().getFullYear()}, conefacts inc.
+          © {new Date().getFullYear()}, conefacts inc. ✨
         </footer>
       </div>
     </>
