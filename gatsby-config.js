@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `#conefacts`,
+    title: `Cone Facts`,
     description: `Pick up a pine cone and let the mysteries hidden by the shingle-like scales unfold.`,
     author: `Casey Kelly`,
   },
