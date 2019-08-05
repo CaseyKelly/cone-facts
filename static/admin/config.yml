@@ -12,4 +12,4 @@ collections:
     create: true
     fields:
       - { name: title, label: Title, widget: string }
-      - { name: content, label: content, widget: markdown }
+      - { name: body, label: Body, widget: markdown }
