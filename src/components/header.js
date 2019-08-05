@@ -3,14 +3,14 @@ import PropTypes from 'prop-types'
 import styled, { keyframes } from 'styled-components'
 import { graphql, useStaticQuery } from 'gatsby'
 import BackgroundImage from 'gatsby-background-image'
-import { fadeIn } from 'react-animations';
+import { fadeIn } from 'react-animations'
 
-const fadeInAnimation = keyframes`${fadeIn}`;
+const fadeInAnimation = keyframes`${fadeIn}`
 
 const ImageBackground = styled(BackgroundImage)`
   background-position: top 40% center;
   background-size: cover;
-  height: 50vh;
+  height: 45vh;
 
   /* override the default margin for sibling elements  */
   + * {
@@ -60,7 +60,11 @@ const Header = () => {
   `)
 
   return (
-    <ImageBackground Tag="section" fluid={data.placeholderImage.childImageSharp.fluid} fadeIn="soft">
+    <ImageBackground
+      Tag="section"
+      fluid={data.placeholderImage.childImageSharp.fluid}
+      fadeIn="soft"
+    >
       <TextBox>
         <h1>#conefacts</h1>
       </TextBox>
