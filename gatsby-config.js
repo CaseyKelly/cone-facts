@@ -17,12 +17,13 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `conefacts`,
-        path: `${__dirname}/src/conefacts`,
+        path: `${__dirname}/content/conefacts`,
       },
     },
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-netlify-cms`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
