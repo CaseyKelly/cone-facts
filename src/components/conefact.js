@@ -5,6 +5,7 @@ import Card from '@material-ui/core/Card'
 const Wrapper = styled('div')`
   margin: 0 auto;
   max-width: 70vw;
+  min-height: 250px;
 `
 
 const ContentWrapper = styled('div')`
