@@ -1,16 +1,17 @@
-import React from 'react'
-import styled from 'styled-components'
-import Card from '@material-ui/core/Card'
+import React from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import Card from '@material-ui/core/Card';
 
 const Wrapper = styled('div')`
   margin: 0 auto;
   max-width: 70vw;
   min-height: 250px;
-`
+`;
 
 const ContentWrapper = styled('div')`
   padding: 1rem;
-`
+`;
 
 const Conefact = ({ conefact }) => (
   <Wrapper>
@@ -21,6 +22,13 @@ const Conefact = ({ conefact }) => (
       </ContentWrapper>
     </Card>
   </Wrapper>
-)
+);
 
-export default Conefact
+Conefact.propTypes = {
+  conefact: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    content: PropTypes.string.isRequired,
+  }).isRequired,
+};
+
+export default Conefact;
