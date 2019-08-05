@@ -1,11 +1,10 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import styled, { keyframes } from 'styled-components'
-import { graphql, useStaticQuery } from 'gatsby'
-import BackgroundImage from 'gatsby-background-image'
-import { fadeIn } from 'react-animations'
+import React from 'react';
+import styled, { keyframes } from 'styled-components';
+import { graphql, useStaticQuery } from 'gatsby';
+import BackgroundImage from 'gatsby-background-image';
+import { fadeIn } from 'react-animations';
 
-const fadeInAnimation = keyframes`${fadeIn}`
+const fadeInAnimation = keyframes`${fadeIn}`;
 
 const ImageBackground = styled(BackgroundImage)`
   background-position: top 40% center;
@@ -16,7 +15,7 @@ const ImageBackground = styled(BackgroundImage)`
   + * {
     margin-top: 0;
   }
-`
+`;
 
 const TextBox = styled('div')`
   /* background-image: linear-gradient(to top, #ddbbffdd 2rem, #ddbbff00); */
@@ -44,7 +43,7 @@ const TextBox = styled('div')`
   a {
     margin-top: 0.5rem;
   }
-`
+`;
 
 const Header = () => {
   const data = useStaticQuery(graphql`
@@ -57,7 +56,7 @@ const Header = () => {
         }
       }
     }
-  `)
+  `);
 
   return (
     <ImageBackground
@@ -69,15 +68,7 @@ const Header = () => {
         <h1>#conefacts</h1>
       </TextBox>
     </ImageBackground>
-  )
-}
+  );
+};
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
-
-export default Header
+export default Header;

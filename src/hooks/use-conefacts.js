@@ -1,4 +1,4 @@
-import { graphql, useStaticQuery } from 'gatsby'
+import { graphql, useStaticQuery } from 'gatsby';
 
 const useConefacts = () => {
   const data = useStaticQuery(graphql`
@@ -17,13 +17,13 @@ const useConefacts = () => {
         }
       }
     }
-  `)
+  `);
 
   return data.allMarkdownRemark.edges.map(conefact => ({
     title: conefact.node.frontmatter.title,
     content: conefact.node.internal.content,
     id: conefact.node.id,
-  }))
-}
+  }));
+};
 
-export default useConefacts
+export default useConefacts;
