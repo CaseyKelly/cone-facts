@@ -16,18 +16,23 @@ const Wrapper = styled('div')`
 const ContentWrapper = styled('div')`
   padding: 1rem;
   @media (max-width: 768px) {
-    min-height: 380px;
+    min-height: 320px;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 `;
 
+const Title = styled('h3')`
+  font-weight: 800;
+  text-decoration: underline;
+`;
+
 const Conefact = ({ conefact }) => (
   <Wrapper>
     <Card>
       <ContentWrapper>
-        <h3>{conefact.title}</h3>
+        <Title>{conefact.title}</Title>
         <p>{conefact.content}</p>
       </ContentWrapper>
     </Card>
