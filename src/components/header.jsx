@@ -9,8 +9,10 @@ const fadeInAnimation = keyframes`${fadeIn}`;
 const ImageBackground = styled(BackgroundImage)`
   background-position: top 40% center;
   background-size: cover;
-  height: 45vh;
-
+  height: 40vh;
+  @media (max-width: 768px) {
+    height: 30vh;
+  }
   /* override the default margin for sibling elements  */
   + * {
     margin-top: 0;

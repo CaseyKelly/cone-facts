@@ -5,8 +5,12 @@ import Card from '@material-ui/core/Card';
 
 const Wrapper = styled('div')`
   margin: 0 auto;
-  max-width: 70vw;
   min-height: 250px;
+  max-width: 80vw;
+
+  @media (max-width: 768px) {
+    max-width: 90vw;
+  }
 `;
 
 const ContentWrapper = styled('div')`
