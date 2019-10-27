@@ -11,8 +11,8 @@ import styled, { keyframes } from 'styled-components';
 import { useStaticQuery, graphql } from 'gatsby';
 import { swing } from 'react-animations';
 
-import Header from './header';
-import './layout.css';
+import Header from '../components/header';
+import '../components/layout.css';
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
