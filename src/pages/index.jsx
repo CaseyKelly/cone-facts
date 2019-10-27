@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Button from '@material-ui/core/Button';
+import Fab from '@material-ui/core/Fab';
 import useConefacts from '../hooks/use-conefacts';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
@@ -21,14 +21,18 @@ const IndexPage = () => {
     <Layout>
       <SEO title="Cone Facts" />
       <Conefact conefact={currentFact} />
-      <div style={{ margin: '1rem' }}>
-        <Button
-          variant="contained"
-          component="span"
+      <div
+        style={{
+          margin: '1rem',
+        }}
+      >
+        <Fab
+          variant="extended"
+          color="primary"
           onClick={() => setCurrentFact(getRandomFact(conefacts, currentFact))}
         >
-          get another #conefact
-        </Button>
+          <span style={{ fontWeight: 600 }}>discover another #conefact</span>
+        </Fab>
       </div>
     </Layout>
   );
