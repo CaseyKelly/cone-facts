@@ -45,6 +45,9 @@ const Layout = ({ children }) => {
     width: 100%;
     padding: 0.5rem 1rem;
     text-align: center;
+    -moz-box-shadow: 0px -3px 5px 0px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px -3px 5px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px -3px 5px 0px rgba(0, 0, 0, 0.15);
   `;
 
   const bounceAnimation = keyframes`${swing}`;
