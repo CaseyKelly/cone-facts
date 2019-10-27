@@ -2,10 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
-import Layout from '../components/layout';
 
 const Conesquad = ({ data }) => (
-  <Layout>
+  <>
     <h1>
       <span role="img" aria-label="rocket ship">
         🚀
@@ -18,7 +17,7 @@ const Conesquad = ({ data }) => (
     <div style={{ height: '500px' }}>
       <Img fluid={data.file.childImageSharp.fluid} />
     </div>
-  </Layout>
+  </>
 );
 
 export const query = graphql`

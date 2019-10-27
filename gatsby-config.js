@@ -51,6 +51,9 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-layout`,
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Cone Facts`,
@@ -64,4 +67,4 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
   ],
-}
+};
