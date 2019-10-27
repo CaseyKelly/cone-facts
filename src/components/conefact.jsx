@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Card from '@material-ui/core/Card';
+import ConeIconSrc from '../images/coneicon.png';
 
 const Wrapper = styled('div')`
   margin: 0 auto;
@@ -15,11 +16,14 @@ const Wrapper = styled('div')`
 
 const ContentWrapper = styled('div')`
   padding: 1rem;
+  min-height: 220px;
+
   @media (max-width: 768px) {
-    min-height: 320px;
+    min-height: 280px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 0 1rem;
   }
 `;
 
@@ -28,13 +32,22 @@ const Title = styled('h3')`
   text-decoration: underline;
 `;
 
+const Content = styled('p')`
+  margin: 0;
+`;
+
+const ConeIcon = styled('img')`
+  margin-bottom: 0.5rem;
+`;
+
 const Conefact = ({ conefact }) => (
   <Wrapper>
     <Card>
       <ContentWrapper>
         <Title>{conefact.title}</Title>
-        <p>{conefact.content}</p>
+        <Content>{conefact.content}</Content>
       </ContentWrapper>
+      <ConeIcon src={ConeIconSrc} height="30px" />
     </Card>
   </Wrapper>
 );
