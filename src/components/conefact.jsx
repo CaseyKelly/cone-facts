@@ -15,6 +15,12 @@ const Wrapper = styled('div')`
 
 const ContentWrapper = styled('div')`
   padding: 1rem;
+  @media (max-width: 768px) {
+    min-height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 `;
 
 const Conefact = ({ conefact }) => (

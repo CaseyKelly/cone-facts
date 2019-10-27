@@ -11,7 +11,7 @@ const ImageBackground = styled(BackgroundImage)`
   background-size: cover;
   height: 40vh;
   @media (max-width: 768px) {
-    height: 30vh;
+    height: 25vh;
   }
   /* override the default margin for sibling elements  */
   + * {
